@@ -1,0 +1,162 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "Ayo belajar Python\n",
+      "Belajar Python Sangat Mudah\n",
+      "20\n",
+      "3.14\n",
+      "[1, 2, 3, 4, 5]\n",
+      "['satu', 'dua', 'tiga']\n",
+      "(1, 2, 3, 4, 5)\n",
+      "('satu', 'dua', 'tiga')\n",
+      "{'nama': 'Budi', 'umur': 20}\n",
+      "{'nama': 'Andi', 'umur': 21}\n",
+      "<class 'dict'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "#tipe data Boolean\n",
+    "print(True)\n",
+    "\n",
+    "#tipe data String\n",
+    "print(\"Ayo belajar Python\")\n",
+    "print('Belajar Python Sangat Mudah')\n",
+    "\n",
+    "#tipe data Integer\n",
+    "print(20)\n",
+    "\n",
+    "#tipe data Float\n",
+    "print(3.14)\n",
+    "\n",
+    "#tipe data List\n",
+    "print([1,2,3,4,5])\n",
+    "print([\"satu\", \"dua\", \"tiga\"])\n",
+    "\n",
+    "#tipe data Tuple\n",
+    "print((1,2,3,4,5))\n",
+    "print((\"satu\", \"dua\", \"tiga\"))\n",
+    "\n",
+    "#tipe data Dictionary\n",
+    "print({\"nama\":\"Budi\", 'umur':20})\n",
+    "#tipe data Dictionary dimasukan ke dalam variabel biodata\n",
+    "biodata = {\"nama\":\"Andi\", 'umur':21} #proses inisialisasi variabel biodata\n",
+    "print(biodata) #proses pencetakan variabel biodata yang berisi tipe data Dictionary\n",
+    "print(type(biodata)) #fungsi untuk mengecek jenis tipe data. akan tampil <class 'dict'> yang berarti dict adalah tipe data dictionary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>Nama</th>\n",
+       "      <th>Nilai</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>Amir</td>\n",
+       "      <td>7</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>Fadli</td>\n",
+       "      <td>8</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>Fatya</td>\n",
+       "      <td>9</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "    Nama  Nilai\n",
+       "0   Amir      7\n",
+       "1  Fadli      8\n",
+       "2  Fatya      9"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Sample Dataset\n",
+    "\n",
+    "import pandas as pd\n",
+    "\n",
+    "pizza = {'Nama': ['Amir', 'Fadli', 'Fatya'],\n",
+    "'Nilai': [7, 8, 9]\n",
+    "}\n",
+    "\n",
+    "pizza_df = pd.DataFrame(pizza)\n",
+    "pizza_df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.7"
+  }
+ },
+
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
